@@ -28,3 +28,8 @@ let x = 25;
 let y =  30;
 console.log("ture : ",x < y)
 console.log("false : ",x > y)
+
+const now = 2037;
+let yourBirthDay = 2018;
+let myBiirthDay = 1991
+console.log(">>>",now - myBiirthDay > now.yourBirthDay)
