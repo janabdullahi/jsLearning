@@ -145,3 +145,37 @@ switch (day) {
         console.log("Not selected a day!")
 
 }
+
+const days = prompt("Enter daily Days: ")
+if (days == 'monday'){
+    console.log("Moday");
+}
+else if(days == 'tuesday')
+{
+    console.log("Tuesday")
+}
+else if(days == wednesday)
+{
+    console.log("Wednesday")
+}
+else {
+    console.log("Not selected a Day!")
+}
+
+// conditonal or ternary operator
+age >= 18 ? console.log("Your over 18") : console.log("Your under 18")
+const ages = age >= 18 ? 'over 18' : 'under 18'
+console.log(ages)
+
+
+// const bill = 275;
+// const tip = 0.15
+// if (bill >=50 && bill <=300)
+// {
+//     const result = bill * tip
+//     console.log(result)
+// }
+
+const bill = 275;
+const tip = (bill >=50 && bill <=300) ? bill * 0.15 : bill * 0.2;
+console.log(tip)
