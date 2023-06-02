@@ -145,3 +145,19 @@ switch (day) {
         console.log("Not selected a day!")
 
 }
+
+const days = prompt("Enter daily Days: ")
+if (days == 'monday'){
+    console.log("Moday");
+}
+else if(days == 'tuesday')
+{
+    console.log("Tuesday")
+}
+else if(days == wednesday)
+{
+    console.log("Wednesday")
+}
+else {
+    console.log("Not selected a Day!")
+}
