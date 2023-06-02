@@ -67,3 +67,23 @@ else {
 }
 console.log(typeof new_value)
 console.log(Number(new_value))
+
+console.log(typeof age)
+console.log(Boolean(age))
+
+console.log(Boolean(0)) // Flase
+console.log(Boolean(undefined)) // False
+console.log(Boolean('abdullahi')) // True
+console.log(Boolean({})) // Ture
+console.log(Boolean('')) // False
+
+
+// 0, undefind, null, Nan
+money = 0; // 0 is false 
+if (money){
+    console.log("The if statment is not executing. Because its falsy")
+}
+else {
+    console.log("the else statment is executing.")
+}
+
