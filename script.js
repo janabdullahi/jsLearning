@@ -90,5 +90,20 @@ else {
 console.log(age)
 if (age === 24) // === is strict. means the value should be same and if we take it '24' then its not showing 24.
 console.log(`Your age is ${age}`)
-if (age == 24) // == is a loose. means the value the valus can be anything and if we take it '24' its showing 24. 
+if (age == 24) // == is a loose. means the value the valus can be anything and if we take it '24' its showing 24.
+
 console.log(`Your age is only ${age}`)
+
+const favourite = prompt("What's your favourite number ? ")
+console.log(favourite)
+
+if (favourite == 20)
+{
+    console.log("Your guess is right!")
+}
+
+
+const favourite_number = Number(prompt("What's is Your favourite number ? "))
+if(favourite_number === 23){
+    console.log("You got it!")
+}
