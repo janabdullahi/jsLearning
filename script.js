@@ -51,3 +51,7 @@ console.log("John's BMI: ", BMI_john)
 
 markHigherBmi = BMI_mark > BMI_john
 console.log(markHigherBmi)
+
+
+const new_value = `my name ${first_name}, I'm  ${age} years old`
+console.log(new_value)
