@@ -55,3 +55,13 @@ console.log(markHigherBmi)
 
 const new_value = `my name ${first_name}, I'm  ${age} years old`
 console.log(new_value)
+
+if(BMI_john > BMI_mark)
+{
+    console.log("John's BMI is higher than Mark")
+    console.log(`John's BMI is ${BMI_john}`)
+}   
+else {
+    console.log("Mark's BMI is higher than john")
+    console.log(`John's BMI is ${BMI_mark}`)
+}
