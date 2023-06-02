@@ -65,3 +65,5 @@ else {
     console.log("Mark's BMI is higher than john")
     console.log(`John's BMI is ${BMI_mark}`)
 }
+console.log(typeof new_value)
+console.log(Number(new_value))
