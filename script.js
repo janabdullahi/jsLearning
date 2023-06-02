@@ -22,3 +22,9 @@ console.log(age)
 // const is not changable
 const birthday = 2000;
 console.log(birthday)
+
+
+let x = 25;
+let y =  30;
+console.log("ture : ",x < y)
+console.log("false : ",x > y)
