@@ -161,3 +161,8 @@ else if(days == wednesday)
 else {
     console.log("Not selected a Day!")
 }
+
+// conditonal or ternary operator
+age >= 18 ? console.log("Your over 18") : console.log("Your under 18")
+const ages = age >= 18 ? 'over 18' : 'under 18'
+console.log(ages)
