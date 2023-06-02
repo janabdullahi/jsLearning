@@ -107,3 +107,22 @@ const favourite_number = Number(prompt("What's is Your favourite number ? "))
 if(favourite_number === 23){
     console.log("You got it!")
 }
+
+// challenge 3
+// dolphins 96,108,89
+// kolas 88,91,110
+
+dolphins_avg = (96 + 108 + 89) / 3
+kolas_avg = (88 + 91 + 110) / 3
+console.log(dolphins_avg, kolas_avg)
+if(dolphins_avg > kolas_avg && dolphins_avg >= 100)
+{
+    console.log("The winner team is dolphin's")
+}
+else if(dolphins_avg < kolas_avg && kolas_avg >= 100)
+{
+    console.log("The winner is koal's")
+}
+else if(dolphins_avg === kolas_avg && dolphins_avg >= 100 && kolas_avg >= 100) {
+    console.log("The both teams are same")
+}
