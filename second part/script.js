@@ -44,3 +44,17 @@ const yearsOld = function (birthYear){
 }
 const year = yearsOld(2000)
 console.log(year)
+
+
+function fruitCount(count){
+    return `${count}`
+}
+
+function juice(apple, orange){
+    const appleCount = fruitCount(3)
+    const orangeCount = fruitCount(3)
+    return `Make me a juice of ${appleCount} apple and ${orangeCount} orange.`
+}
+
+const counting = juice(5,5)
+console.log(counting)
