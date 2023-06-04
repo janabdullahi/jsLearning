@@ -104,3 +104,15 @@ console.log(alpha.indexOf('E'))
 
 // includes: Boolean
 console.log(alpha.includes('E'))
+
+
+// array vs object
+const arr = ['hamed', '20', 'kbl', 'afg']
+const obj = {
+    'name' : 'hamed',
+    'year' : '20',
+    'province' : 'kbl',
+    'country' : 'afg'
+}
+
+console.log(obj['name'])
