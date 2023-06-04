@@ -23,3 +23,24 @@ function para(apple, banana)
 
 const pa = para(4,4)
 console.log(pa)
+
+// anynomous function : a function without name
+const fruits = function(apple,banana)
+{
+    return (`I have ${apple} apples and ${banana} bananas`)
+}
+const fruit = fruits(10,2)
+console.log(fruit)
+
+function calBirth(birthYear){
+    return `Your ${2023 - birthYear} years old.`
+}
+const birth = calBirth(2000)
+console.log(birth)
+
+// anynomous function : a function without name
+const yearsOld = function (birthYear){
+    return `Your ${2023 - birthYear} years old.`
+}
+const year = yearsOld(2000)
+console.log(year)
