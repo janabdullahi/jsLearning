@@ -75,3 +75,14 @@ function winner(avg1,avg2){
 }
 const win = winner(avg1,avg2)
 console.log(win)
+
+const a = "A"
+const b = "B"
+const c = "C"
+const d = "D"
+const e = "E"
+console.log(a,b,c,d,e)
+
+// is a container and storing a collection of data
+const alpha = ['A', 'B', 'C', 'D', 'E']
+console.log(alpha)
