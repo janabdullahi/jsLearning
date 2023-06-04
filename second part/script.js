@@ -86,3 +86,21 @@ console.log(a,b,c,d,e)
 // is a container and storing a collection of data
 const alpha = ['A', 'B', 'C', 'D', 'E']
 console.log(alpha)
+
+// pushing: adding the element at the end
+alpha.push('F')
+console.log(alpha)
+
+// unshift: adding the element at the start
+alpha.unshift('0')
+console.log(alpha)
+
+// pop: removing the element from the end
+alpha.pop()
+console.log(alpha)
+
+// index: index the element
+console.log(alpha.indexOf('E'))
+
+// includes: Boolean
+console.log(alpha.includes('E'))
