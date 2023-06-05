@@ -141,7 +141,12 @@ const obej = {
 
     func : function(){
         return `${this.bornOn}`
-    }
-}
+    },
 
+    getSummary : function(bornOn){
+        return `${this.firstname} is ${bornOn} years old`
+    }
+
+}
 console.log(obej.func())
+console.log(obej.getSummary(200))
