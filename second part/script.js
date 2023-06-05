@@ -116,3 +116,37 @@ const obj = {
 }
 
 console.log(obj['name'])
+
+
+// const lop = {
+//     firstname : 'ABDULLAHI',
+//     birthday : '2000',
+//     example : true,
+//     light : 'on',
+
+//     test : function(birthday){
+//         return 2023 - birthday
+//     }
+// }
+
+// console.log(lop.test(2000))
+
+
+
+const obej = {
+    firstname : 'hamed',
+    lastname : 'abdullahi',
+    bornOn : '2000',
+    working : true,
+
+    func : function(){
+        return `${this.bornOn}`
+    },
+
+    getSummary : function(bornOn){
+        return `${this.firstname} is ${bornOn} years old`
+    }
+
+}
+console.log(obej.func())
+console.log(obej.getSummary(200))
