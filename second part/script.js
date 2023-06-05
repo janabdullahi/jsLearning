@@ -150,3 +150,28 @@ const obej = {
 }
 console.log(obej.func())
 console.log(obej.getSummary(200))
+
+const mark = {
+    fullname : 'Mark Miler',
+    mass : '78',
+    height: '1.69',
+    calBMI : function(){
+        return `Mark ${this.mass / this.height **2}`       
+    }
+}
+
+const john = {
+    fullname: 'John Smith',
+    mass : '92',
+    height : '1.95',
+    calBMI : function(){
+        return `John ${this.mass / this.height **2}`       
+    }
+}
+if (mark.calBMI() > john.calBMI()){
+    console.log( mark.calBMI(),"BMI is higher")
+}
+else {
+    console.log(john.calBMI(),"BMI is higher")
+    
+}
