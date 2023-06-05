@@ -116,3 +116,17 @@ const obj = {
 }
 
 console.log(obj['name'])
+
+
+const lop = {
+    firstname : 'ABDULLAHI',
+    birthday : '2000',
+    example : true,
+    light : 'on',
+
+    test : function(birthday){
+        return 2023 - birthday
+    }
+}
+
+console.log(lop.test(2000))
