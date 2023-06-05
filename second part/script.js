@@ -175,3 +175,7 @@ else {
     console.log(john.calBMI(),"BMI is higher")
     
 }
+
+for(let i=0; i<=10; i++){
+    console.log("hey", i)
+}
