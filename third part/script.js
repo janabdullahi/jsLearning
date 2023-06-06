@@ -27,9 +27,9 @@ console.log("the amplitude is ", ampl)
 const measurement = function(){
     const obj = {
         type : 'celius',
-        value : prompt("value: ")
+        value : prompt("value: ") // propmt always return string
     }
-    const kelvin = Number(obj.value) + 273
+    const kelvin = Number(obj.value) + 273 // that's why we need to convert it to number first and then add it.
     return kelvin
 }
 
