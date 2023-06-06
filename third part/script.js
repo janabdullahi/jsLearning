@@ -1,5 +1,8 @@
 
-const temprature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
+const temprature1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
+const temprature2 = [3, 4, 12, -18, 22, 91, 2, 4, 7, 14, 9, 5]
+const merge =  temprature1.concat(temprature2)
+
 // temprature amplitude = max value  - min value
 
 
@@ -17,5 +20,5 @@ const funcMax = function (temp)
     console.log("minn : ", min)
     return max - min
 }
-const ampl = funcMax(temprature)
+const ampl = funcMax(merge)
 console.log("the amplitude is ",ampl)
