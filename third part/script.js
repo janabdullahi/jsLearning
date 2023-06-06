@@ -15,7 +15,7 @@ const funcMax = function (temp)
     }
     console.log("maxx : ", max)
     console.log("minn : ", min)
-
-
+    return max - min
 }
-funcMax(temprature)
+const ampl = funcMax(temprature)
+console.log("the amplitude is ",ampl)
