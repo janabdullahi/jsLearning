@@ -44,7 +44,9 @@ console.log(document.querySelector(".paragraph").textContent = 'Try To Find The 
 // console.log(document.querySelector(".paragraph").value = '56');
 
 const number = Math.trunc(Math.random() * 20)
-document.querySelector(".number").textContent = number;
+document.querySelector(".number").textContent = "Secret Number : " + number;
+
+let score = 20;
 
 document.querySelector(".click").addEventListener('click', function () {
     const guess = Number(document.querySelector(".input").value)
@@ -55,12 +57,26 @@ document.querySelector(".click").addEventListener('click', function () {
     else if (guess === number) {
         console.log(document.querySelector(".paragraph").textContent = ' Correct Answer')
     }
-    else if(guess > number)
-    {
-        console.log(document.querySelector(".paragraph").textContent = ' Too High')
+    else if (guess > number) {
+        if (score > 0) {
+            console.log(document.querySelector(".paragraph").textContent = ' Too High')
+            score--;
+            document.querySelector(".score").textContent = "Score : " + score
+        }
+        else {
+            console.log(document.querySelector(".paragraph").textContent = ' YOU LOOSE')
+
+        }
     }
-    else if(guess < number)
-    {
-        console.log(document.querySelector(".paragraph").textContent = ' Too Low')
+    else if (guess < number) {
+        if (score > 0) {
+            console.log(document.querySelector(".paragraph").textContent = ' Too Low')
+            score--;
+            document.querySelector(".score").textContent = "Score : " + score
+        }
+        else {
+            console.log(document.querySelector(".paragraph").textContent = ' YOU LOOSE')
+
+        }
     }
 })
