@@ -36,9 +36,20 @@ const measurement = function(){
 console.log(measurement())
 
 // DOM : document object model is for accessing the HTML elements and manipulating them
-console.log(document.querySelector(".paragraph"));
-console.log(document.querySelector(".paragraph").textContent);
-console.log(document.querySelector(".paragraph").textContent = 'These are paragraph of article');
+// console.log(document.querySelector(".paragraph"));
+// console.log(document.querySelector(".paragraph").textContent);
+console.log(document.querySelector(".paragraph").textContent = 'Try To Find The Correct Number');
 
-console.log(document.querySelector(".guess").textContent);
-console.log(document.querySelector(".paragraph").value = '56');
+// console.log(document.querySelector(".guess").textContent);
+// console.log(document.querySelector(".paragraph").value = '56');
+
+
+
+document.querySelector(".click").addEventListener('click', function(){
+    const guess = Number(document.querySelector(".input").value)
+    console.log(guess)
+    if(!guess)
+    {
+        console.log(document.querySelector(".paragraph").textContent = 'Wrong guess')
+    }
+})
