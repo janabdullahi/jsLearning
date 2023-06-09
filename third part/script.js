@@ -56,6 +56,8 @@ document.querySelector(".click").addEventListener('click', function () {
     }
     else if (guess === number) {
         console.log(document.querySelector(".paragraph").textContent = ' Correct Answer')
+        document.querySelector("body").style.backgroundColor = 'green';
+        document.querySelector(".number").style.width = '30rem';
     }
     else if (guess > number) {
         if (score > 0) {
