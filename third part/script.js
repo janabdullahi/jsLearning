@@ -43,7 +43,8 @@ console.log(document.querySelector(".paragraph").textContent = 'Try To Find The 
 // console.log(document.querySelector(".guess").textContent);
 // console.log(document.querySelector(".paragraph").value = '56');
 
-
+const number = Math.trunc(Math.random() * 20)
+document.querySelector(".number").textContent = number;
 
 document.querySelector(".click").addEventListener('click', function(){
     const guess = Number(document.querySelector(".input").value)
