@@ -1,4 +1,4 @@
-
+'use strict';
 const temprature1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
 const temprature2 = [3, 4, 12, -18, 22, 91, 2, 4, 7, 14, 9, 5]
 const merge = temprature1.concat(temprature2)
@@ -34,3 +34,11 @@ const measurement = function(){
 }
 
 console.log(measurement())
+
+// DOM : document object model is for accessing the HTML elements and manipulating them
+console.log(document.querySelector(".paragraph"));
+console.log(document.querySelector(".paragraph").textContent);
+console.log(document.querySelector(".paragraph").textContent = 'These are paragraph of article');
+
+console.log(document.querySelector(".guess").textContent);
+console.log(document.querySelector(".paragraph").value = '56');
