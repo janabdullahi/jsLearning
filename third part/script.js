@@ -24,10 +24,10 @@ console.log("the amplitude is ", ampl)
 
 
 
-const measurement = function(){
+const measurement = function () {
     const obj = {
-        type : 'celius',
-        value : prompt("value: ") // propmt always return string
+        type: 'celius',
+        value: prompt("value: ") // propmt always return string
     }
     const kelvin = Number(obj.value) + 273 // that's why we need to convert it to number first and then add it.
     return kelvin
@@ -46,11 +46,21 @@ console.log(document.querySelector(".paragraph").textContent = 'Try To Find The 
 const number = Math.trunc(Math.random() * 20)
 document.querySelector(".number").textContent = number;
 
-document.querySelector(".click").addEventListener('click', function(){
+document.querySelector(".click").addEventListener('click', function () {
     const guess = Number(document.querySelector(".input").value)
     console.log(guess)
-    if(!guess)
-    {
+    if (!guess) {
         console.log(document.querySelector(".paragraph").textContent = 'Wrong guess')
+    }
+    else if (guess === number) {
+        console.log(document.querySelector(".paragraph").textContent = ' Correct Answer')
+    }
+    else if(guess > number)
+    {
+        console.log(document.querySelector(".paragraph").textContent = ' Too High')
+    }
+    else if(guess < number)
+    {
+        console.log(document.querySelector(".paragraph").textContent = ' Too Low')
     }
 })
