@@ -40,3 +40,7 @@ html {
     border: 1px rgb(16, 100, 168);
     box-shadow: 1rem 1rem 4rem rgba(41, 80, 104, 0.7);
 }
+
+.hidden {
+    display: none;
+}
