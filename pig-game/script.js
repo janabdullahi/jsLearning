@@ -11,7 +11,10 @@ const current0El = document.getElementById('current--0')
 const current1El = document.getElementById('current--1')
 
 diceEl.classList.add('hidden');
+
+const scores = [0, 0];
 let currentScore = 0;
+let activePlayer = 0;
 
 btnRoll.addEventListener('click', function(){
     const dice = Math.trunc(Math.random() * 6) + 1;
@@ -21,9 +24,12 @@ btnRoll.addEventListener('click', function(){
 
     if(dice !==1){
         currentScore += dice;
+        document.getElementById(`score--${activePlayer}`).textContent = currentScore;
         current0El.textContent = currentScore
     }else{
-
+        document.getElementById(`score--${activePlayer}`).textContent = 0;
+        activePlayer = activePlayer === 0 ? 1 : 0;
+        currentScore = 0;
     }
     
 })
