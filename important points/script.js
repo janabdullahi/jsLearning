@@ -22,3 +22,13 @@ const adding3 = (x,y) => {
     x + y;
     console.log(this) // its a window
 }
+
+
+const hamed = {
+    year : 2000,
+    calc : function(){
+        console.log(2023 - this.year)
+    }
+}
+
+hamed.calc()
