@@ -37,6 +37,9 @@ const poll = {
     registerNewNumber(){
         const answer = Number(prompt(`${this.question}\n ${this.options.join('\n')}\n(write your option)`));
         console.log(answer)
+        typeof answer === 'number' && answer < this.answers.length && this.answers[answer]++;
+        console.log(this.answers)
+
     }
 };
 
