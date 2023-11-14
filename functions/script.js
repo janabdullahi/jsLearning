@@ -38,7 +38,16 @@ const poll = {
         const answer = Number(prompt(`${this.question}\n ${this.options.join('\n')}\n(write your option)`));
         console.log(answer)
         typeof answer === 'number' && answer < this.answers.length && this.answers[answer]++;
-        console.log(this.answers)
+
+        this.displayResults()
+        this.displayResults('string')
+    },
+    displayResults(type = 'array') {
+        if(type === 'array'){
+            console.log(this.answers);
+        }else if(type === 'string'){
+            console.log(`poll result ${this.answers.join(', ')}`)
+        }
 
     }
 };
