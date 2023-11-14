@@ -44,3 +44,4 @@ const poll = {
 };
 
 poll.registerNewNumber()
+document.querySelector('.poll').addEventListener('click', poll.registerNewNumber.bind(poll))
