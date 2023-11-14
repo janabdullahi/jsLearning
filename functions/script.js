@@ -19,3 +19,12 @@ const oneWord = function(str){
 }
 
 console.log(oneWord('hamed jan abdullahi'))
+
+
+const newFuc = function(greeting){
+    return function(name){
+        console.log(`${greeting} ${name}`)
+    }
+}
+
+newFuc('hey')('hamed')
