@@ -13,3 +13,9 @@ const createBooking = function(flightNumber , numberPassenger=1, price=200){
 }
 
 createBooking(12)
+
+const oneWord = function(str){
+    return str.replace(/ /g, '').toLowerCase()
+}
+
+console.log(oneWord('hamed jan abdullahi'))
